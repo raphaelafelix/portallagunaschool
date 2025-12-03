@@ -58,7 +58,7 @@ body{
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 70px;
     font-size: 18px;
 
 }
@@ -73,7 +73,7 @@ body{
     box-sizing: border-box;
     border: 5px solid var(--color-neutral-pink);
     border-radius: 50px;
-    margin-top: -100px;
+    margin-top: -70px;
     border-width: 15px;
 
 
@@ -365,6 +365,36 @@ h2{
     opacity: 0.7; /* deixa meio transparente */
 }
 
-/* FIM PAGINA DO EDUCADOR */
+
+.caixa-texto-professor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+
+.caixa-texto-professor {
+    width: 300px;
+    height: 120px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.btn-enviar-professor {
+    background-color: var(--color-neutral-dark_green);
+    color: var(--color-neutral-white);
+    border: none;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
 
 /* ainda falta a página pra checar as atividades, mas metade já foi! gratidão bbs */

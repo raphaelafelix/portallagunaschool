@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/global.css">
-    <link rel="stylesheet" href="./src/styles/style.css">
+
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
@@ -28,20 +28,31 @@
             oportunidades feitos especialmente para você. </br> </p>
     </div>
     <section class="card-portal">
-        <form action="/login" method="get" class="portal-login">
+        <form method="POST" action="/login" class="portal-login">
 
             <div class="box-login">
                 <label for="login" class="class-login"> Login: </label>
-                <input type="text" id="login" name="login">
+                <input type="text" id="login" name="login" required>
                 <div style="height: 20px;"></div>
 
 
                 <label for="senha" class="class-senha"> Senha: </label>
-                <input type="password" id="senha" name="senha">
-                <button type="submit"> Entrar </button>
-            </div>
+                <input type="password" id="senha" name="senha" required>
+
+                    <label>
+                        <input type="radio" name="tipo" value="professor" checked>
+                        Professor
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="tipo" value="aluno">
+                        Aluno
+                    </label><br><br>
+
+                    <button type="submit">Entrar</button>
         </form>
     </section>
+
 </div>
 
 <!------- FIM DA PÁGINA --------->
